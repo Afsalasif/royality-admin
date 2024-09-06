@@ -11,7 +11,7 @@ type SearchParams = {
   bookingId: string;
 };
 
-function page({ searchParams }: Props) {
+function Page({ searchParams }: Props) {
   const [bookingData, setBookingData] = useState<any>(null);
   const bid = searchParams.bookingId;
 
@@ -177,4 +177,4 @@ const DetailItem: React.FC<{ label: string; value: string }> = ({
     <span className="text-gray-900">{value}</span>
   </div>
 );
-export default page;
+export default Page;
